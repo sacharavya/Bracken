@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikes</title>
+
+    <!-- bootstrap Css -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <!-- custom Css -->
+    <link rel="stylesheet" href="./css/Bike.css">
+</head>
+
+<body>
+    <header>
+        <div class="h-container">
+            <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand site-title" href="#">Bike Rental</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                    <div class="mr-auto"></div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mr-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link nav-color" href="#">Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-color" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-color" href="#">Bikes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-color" href="#">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn" href="#">Book</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-1">
+            <div class="row col-md-12">
+                <div class="col-md-6">
+                    <img src="./assets/images/bike/bike.png" alt="img" id="featured">
+                    <div class="thumbnail-imgs">
+                        <img src="./assets/images/bike/bike.png" class="thumbnails active">
+                        <img src="./assets/images/bike/bike1.png" class="thumbnails">
+                        <img src="./assets/images/bike/fronttyre.png" class="thumbnails">
+                        <img src="./assets/images/bike/headlight.png" class="thumbnails">
+                        <img src="./assets/images/bike/backtyre.png" class="thumbnails">
+                        <img src="./assets/images/bike/back.png" class="thumbnails">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content bike-feature">
+                        <h1>Yamaha C21</h1>
+                        <div class="feature">
+                            <p>pear:2009 <span></span>Engine:600cc</p>
+                            <a href="#">Book YOur Ride</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="section-2">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./assets/images/bike/headlight.png">
+                </div>
+                <div class="col-md-7 aboutbike">
+                    <h1>Dummy Heading</h1>
+                    <span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eveniet enim porro sed quo sunt omnis accusamus atque dignissimos earum praesentium? Vitae culpa, voluptatibus impedit aut exercitationem quibusdam, dignissimos ipsum,
+                        aliquid error beatae quia nostrum blanditiis minima repudiandae doloribus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti nulla saepe molestias quasi nesciunt error reprehenderit eos quisquam? Blanditiis
+                        amet voluptatum impedit dolore. Maxime autem harum deserunt doloribus! Commodi.</p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-7 ">
+                    <h1>Dummy Heading</h1>
+                    <span></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eveniet enim porro sed quo sunt omnis accusamus atque dignissimos earum praesentium? Vitae culpa, voluptatibus impedit aut exercitationem quibusdam, dignissimos ipsum,
+                        aliquid error beatae quia nostrum blanditiis minima repudiandae doloribus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti nulla saepe molestias quasi nesciunt error reprehenderit eos quisquam? Blanditiis
+                        amet voluptatum impedit dolore. Maxime autem harum deserunt doloribus! Commodi.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="./assets/images/bike/headlight.png">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer container-fluid p-0 m-0">
+            <div class="footer-content">
+                <div class="footer-Section About">
+                    <h1 class="name-section">Bike Rental company</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat corporis impedit ducimus distinctio nulla similique quos, animi incidunt, quasi molestias sint vel non recusandae. Vel explicabo nam itaque qui!
+                    </p>
+                </div>
+                <div class="footer-Section links">
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>About Us</li>
+                        </a>
+                        <a href="#">
+                            <li>Bikes</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact Us</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="text-align: center;">Bike Rental &copy; 2020</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let thumbnails = document.getElementsByClassName('thumbnails');
+        let activeimg = document.getElementsByClassName('active');
+
+        for (var i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('mouseover', function() {
+                if (activeimg.length > 0) {
+                    activeimg[0].classList.remove('active')
+                }
+                this.classList.add('active')
+                document.getElementById('featured').src = this.src
+            })
+        }
+    </script>
+</body>
+
+</html>

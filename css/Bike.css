@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@700;900&display=swap');
+ :root {
+    --primary-color: #45ccb8;
+    --sec-color: #45ccb8;
+    --light-gray: #2b3032a1;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+}
+
+.h-container {
+    height: 100%;
+    width: 100%;
+    background: rgb(46, 51, 147);
+    background: linear-gradient( 320deg, rgba(46, 51, 147, 1) 35%, rgba(41, 170, 225, 1) 100%);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav-color {
+    color: white !important;
+}
+
+.navbar .site-title {
+    font-family: var(--roboto);
+    font-weight: 700;
+    color: white !important;
+}
+
+.nav-item:last-child {
+    padding-right: 6em;
+}
+
+.nav-link:hover {
+    color: #ff00c8 !important;
+}
+
+.navbar-brand {
+    padding-left: 6rem;
+}
+
+.nav-item>.btn {
+    padding: 2px 20px;
+    margin: 6px 10px;
+    color: #fff;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    letter-spacing: .5px;
+    border-radius: 5px;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff00c8, #ff00c8);
+}
+
+.nav-item>.btn:hover {
+    background: #fff;
+    color: #ff00c8;
+}
+
+
+/* Bikes */
+
+#featured {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    cursor: pointer;
+    margin-top: 5em;
+    margin-left: 5em;
+    /* border: 2px solid black; */
+}
+
+.thumbnail-imgs {
+    border: 2px solid black;
+    margin-left: 8em;
+    margin-top: 5em;
+}
+
+.thumbnail {
+    max-width: 600px;
+    max-height: 600px;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+.thumbnails {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: 15px;
+}
+
+.thumbnails:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
+.content {
+    padding: 7em;
+    padding-top: 9em;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: var(--roboto);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 55px;
+}
+
+.feature {
+    margin-top: 2em;
+}
+
+.feature p {
+    text-align: center;
+    /* align-items: center; */
+    font-family: var(--roboto);
+    font-size: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 1em;
+}
+
+span {
+    margin: 1em;
+}
+
+.content a {
+    margin: 3em;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    /* margin: 20em 10px; */
+    /* margin-left: 6em; */
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff00c8, #ff00c8);
+}
+
+.content a:hover {
+    box-shadow: 0 2px 10px rgb(248, 0, 227);
+}
+
+
+/* Section about bike parts or discription of bike parts */
+
+.section-2 {
+    padding: 5em;
+    padding-left: 7em;
+}
+
+.aboutbike {
+    padding-top: 3em;
+}
+
+.section-2 h1 {
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
+
+.section-2 p {
+    text-align: justify;
+    font-family: var(--montserrat);
+    font-weight: 400;
+}
+
+
+/* footer */
+
+.footer {
+    background: linear-gradient( 320deg, rgba(46, 51, 147, 1) 35%, rgba(41, 170, 225, 1) 100%);
+    color: white;
+    /* height: 200px; */
+    /* position: relative; */
+}
+
+.footer-bottom {
+    color: white;
+    /* height: 5px; */
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px #666;
+    padding: 1px;
+}
+
+.footer-bottom p {
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+
+/* Footer content */
+
+.footer .footer-content {
+    /* height: 350px; */
+    display: flex;
+}
+
+.footer .footer-content .footer-Section {
+    flex: 1;
+    padding: 25px;
+    /* border: 1px solid wheat; */
+}
+
+.footer .footer-content h1 {
+    color: white;
+    font-size: 15px;
+    margin-left: 5em;
+    opacity: .8;
+    font-family: var(--roboto);
+    font-weight: 700;
+}
+
+.footer .footer-content p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 6em;
+    opacity: .8;
+}
+
+
+/* footer links */
+
+.footer .footer-content .links ul a li {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 40em;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.footer .footer-content .links {
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .links ul a li:hover {
+    opacity: 1;
+    /* font-size: 20px; */
+    margin-left: 39em;
+    transition: all .3s;
+}
