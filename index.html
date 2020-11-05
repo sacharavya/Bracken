@@ -2,61 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bike rental</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Service</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap-4.5.0-dist/css/bootstrap.min.css" />
-
-    <!-- Css -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- responsive Css -->
-    <link rel="stylesheet" href="./css/responsive.css">
-
-    <!-- FONT AWSOME CDN -->
-    <script src="https://kit.fontawesome.com/ac9ff115c7.js" crossorigin="anonymous"></script>
-
-    <!-- slick Css CDN -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
     <header>
-        <div class="h-container">
+        <div class="h-container" id="naveffect">
+            <!-- landing page container-->
             <div class="container-fluid p-0">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand site-title" href="#">Bike Rental</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                    <div class="mr-auto"></div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="mr-auto"></div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link nav-color" href="#">Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-color" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="#">Bikes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-color" href="#">Contact us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn" href="#">Book</a>
-                            </li>
-                        </ul>
-                    </div>
+                <nav>
+                    <input id="nav-toggle" type="checkbox">
+                    <div class="logo">BikeRental</div>
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="./bike.html">Bikes</a></li>
+                        <li><a href="./contact-us/index.php">Contact Us</a></li>
+                        <li><a href="./contact-us/index.php" class="book">Book</a></li>
+                    </ul>
+                    <label for="nav-toggle" class="icon-burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </label>
                 </nav>
             </div>
         </div>
+        <!-- bikes and information container-->
         <div class="header-part">
+            <!-- bikes container-->
             <div class="bike-container">
                 <div id="bike-slider">
                     <div class="bike-pic">
@@ -73,39 +55,42 @@
                     </div>
                 </div>
             </div>
+            <!--information container-->
             <div class="info-container">
                 <div id="slider">
-                    <div class="info-col">
-                        <h1>R6</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima id enim voluptatibus veniam modi reiciendis quis numquam saepe. Perferendis laudantium expedita itaque voluptas molestiae tempore. Mollitia dolorum fugit ut odit.
-                        </p>
-                        <a href="#">Book Now</a>
+                    <div class="content bike-feature">
+                        <h1>Yamaha C21</h1>
+                        <div class="feature">
+                            <p>Year:2009 <span></span>Engine:600cc</p>
+                        </div>
+                        <a href="./contact-us/pass.php">Book Your Ride</a>
                     </div>
-                    <div class="info-col">
-                        <h1>Red</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima id enim voluptatibus veniam modi reiciendis quis numquam saepe. Perferendis laudantium expedita itaque voluptas molestiae tempore. Mollitia dolorum fugit ut odit.
-                        </p>
-                        <a href="#">Book Now</a>
+                    <div class="content bike-feature">
+                        <h1>Yamaha C21</h1>
+                        <div class="feature">
+                            <p>Year:2009 <span></span>Engine:600cc</p>
+                        </div>
+                        <a href="./contact-us/">Book Your Ride</a>
                     </div>
-                    <div class="info-col">
-                        <h1>Green</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima id enim voluptatibus veniam modi reiciendis quis numquam saepe. Perferendis laudantium expedita itaque voluptas molestiae tempore. Mollitia dolorum fugit ut odit.
-                        </p>
-                        <a href="#">Book Now</a>
+                    <div class="content bike-feature">
+                        <h1>Yamaha C21</h1>
+                        <div class="feature">
+                            <p>Year:2009 <span></span>Engine:600cc</p>
+                        </div>
+                        <a href="./contact-us/index.php">Book Your Ride</a>
                     </div>
-                    <div class="info-col">
-                        <h1>Yellow</h1>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima id enim voluptatibus veniam modi reiciendis quis numquam saepe. Perferendis laudantium expedita itaque voluptas molestiae tempore. Mollitia dolorum fugit ut odit.
-                        </p>
-                        <a href="#">Book Now</a>
+                    <div class="content bike-feature">
+                        <h1>Yamaha C21</h1>
+                        <div class="feature">
+                            <p>Year:2009 <span></span>Engine:600cc</p>
+                        </div>
+                        <a href="./contact-us/">Book Your Ride</a>
                     </div>
+
                 </div>
             </div>
         </div>
+        <!-- slide line or for slider-->
         <div class="controller">
             <div id="line1"></div>
             <div id="line2"></div>
@@ -113,7 +98,7 @@
             <div id="line4"></div>
             <div id="active"></div>
         </div>
-
+        <!-- bike images for sliding-->
         <div class="thumbnail-img">
             <img class="thumbnail active" src="./assets/images/blue.png" />
             <img class="thumbnail" src="./assets/images/red.png" />
@@ -121,56 +106,60 @@
             <img class="thumbnail" src="./assets/images/yellow.png" />
         </div>
     </header>
+
     <main>
+        <!-- cards section -->
         <section class="Section-1 container-fluid p-0">
+            <!-- section first that contains about bikes we have-->
             <div class="contents text-center">
                 <h1 style="color: black">Bikes We have</h1>
                 <div class="cards">
                     <div class="d-flex flex-row justify-content-center flex-wrap">
+                        <!-- bikes cards and details-->
                         <div class="card">
                             <img src="./assets/images/yellow.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                <a href="#">View Details</a>
+                                <a href="./bike.html">View Details</a>
                             </div>
                         </div>
                         <div class="card">
                             <img src="./assets/images/yellow.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                <a href="#">View Details</a>
+                                <a href="./bike.html">View Details</a>
                             </div>
                         </div>
                         <div class="card">
                             <img src="./assets/images/yellow.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                <a href="#">View Details</a>
+                                <a href="./bike.html">View Details</a>
                             </div>
                         </div>
                         <div class="card">
                             <img src="./assets/images/yellow.png" class="card-img-top" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                <a href="#">View Details</a>
+                                <a href="./bike.html">View Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <hr />
+
+        <!-- about us section -->
+        <hr>
         <section class="Section-2">
+            <!-- secction 2 contain about bike-->
             <div class="containers text-center">
                 <div class="row col-lg-12 col-md-12 col-sm-12">
                     <div class="col-md-6 col-lg-6">
-                        <div class="panel text-left">
-                            <h1>About US</h1>
-                            <span></span>
+
+                        <div class="panel text-justify">
+                            <h1 id="about-us">About US</h1>
+                            <!-- about bike text-->
                             <p class="pt-4">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, vel labore optio corrupti laboriosam nulla! Odit, distinctio odio. Laboriosam at expedita consequatur obcaecati et doloremque, praesentium voluptates nesciunt repellat quia. Lorem ipsum,
                                 dolor sit amet consectetur adipisicing elit. Ipsum, vel labore optio corrupti laboriosam nulla! Odit, distinctio odio. Laboriosam at expedita consequatur obcaecati et doloremque, praesentium voluptates nesciunt repellat
@@ -180,15 +169,17 @@
                             </p>
                         </div>
                     </div>
+                    <!-- about bike image-->
                     <div class="col-md-6 col-lg-6 ">
                         <div class="about-bike">
-                            <img src="./assets/images/about-bike.jpg" alt="About-bike" />
+                            <img src="./assets/images/about-bike.png" alt="About-bike" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <hr />
+        <hr>
+        <!-- bikes section -->
         <section class="section-3">
             <div class="content-2">
                 <div class="Our-bikes">
@@ -196,15 +187,18 @@
                     <span></span>
                 </div>
                 <div class="bike-card">
+                    <!-- bike-card contains whole card thing-->
                     <div class="dflex flex-row justify-content-center flex">
                         <div class="box">
+                            <!-- box for the size of box container-->
                             <div class="bike-cards">
                                 <div class="imgBx">
+                                    <!-- box that contain image of bike-->
                                     <img src="./assets/images/blue.png" alt="images" />
                                 </div>
                                 <div class="details">
                                     <h2>Bike Name</h2>
-                                    <a href="#">View More</a>
+                                    <a href="./bike.html">View More</a>
                                 </div>
                             </div>
 
@@ -214,17 +208,17 @@
                                 </div>
                                 <div class="details">
                                     <h2>Bike Name</h2>
-                                    <a href="#">View More</a>
+                                    <a href="./bike.html">View More</a>
                                 </div>
                             </div>
 
-                            <div class="bike-cards">
+                            <div class="bike-cards hide">
                                 <div class="imgBx">
                                     <img src="./assets/images/green.png" alt="images" />
                                 </div>
                                 <div class="details">
                                     <h2>Bike Name</h2>
-                                    <a href="#">View More</a>
+                                    <a href="./bike.html">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -232,6 +226,7 @@
                 </div>
 
                 <div class="card-2">
+                    <!-- bike-card contains whole card thing-->
                     <div class="dflex flex-row justify-content-center flex">
                         <div class="box">
                             <div class="bike-cards">
@@ -240,7 +235,7 @@
                                 </div>
                                 <div class="details">
                                     <h2>Bike Name</h2>
-                                    <a href="#">View More</a>
+                                    <a href="./bike.html">View More</a>
                                 </div>
                             </div>
 
@@ -250,35 +245,39 @@
                                 </div>
                                 <div class="details">
                                     <h2>Bike Name</h2>
-                                    <a href="#">View More</a>
+                                    <a href="./bike.html">View More</a>
                                 </div>
                             </div>
 
-                            <div class="bike-cards">
+                            <div class="bike-cards hide">
                                 <div class="imgBx">
                                     <img src="./assets/images/green.png" alt="images" />
                                 </div>
                                 <div class="details">
                                     <h2>Bike Name</h2>
-                                    <a href="#">View More</a>
+                                    <a href="./bike.html">View More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="./bike.html" class="more-bikes">More bikes</a>
             </div>
-            <a href="#" class="center" style="text-align: center;">More bikes</a>
         </section>
-        <hr />
+
+        <!-- contact section -->
+        <hr>
         <section class="section-4">
+            <!-- contact and map-->
             <h1>Contact Us</h1>
             <div class="contact-in">
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.10298370704!2d150.6517805256103!3d-33.84735665532688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2z4KS44KS_4KSh4KSo4KWAIOCkqOCljeCkr-ClgiDgpLjgpL7gpIngpKUg4KS14KWH4KSy4KWN4KS4LCDgpIXgpLfgpY3gpJ_gpY3gpLDgpYfgpLLgpL_gpK_gpL4!5e0!3m2!1sne!2snp!4v1601900784576!5m2!1sne!2snp"
-                        width="auto" height="auto" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
+                    <!-- for map-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15456423.605255399!2d136.7806523038698!3d-18.951703935501808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd4df247a62dcfd%3A0xf5f2d0227612be99!2sQueensland%2C%20Australia!5e0!3m2!1sen!2snp!4v1604502859055!5m2!1sen!2snp"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
                 <div class="contact-form">
-                    <form>
+                    <!-- for form-->
+                    <form enctype="text/plain" method="GET">
                         <input type="text" placeholder="Name" class="contact-form-txt" />
                         <input type="text" placeholder="Email" class="contact-form-txt" />
                         <textarea placeholder="Message" class="contact-form-textarea"></textarea>
@@ -294,21 +293,22 @@
                 <div class="footer-Section About">
                     <h1 class="name-section">Bike Rental company</h1>
                     <p>
+                        <!-- it contains the paragraph about the company-->
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat corporis impedit ducimus distinctio nulla similique quos, animi incidunt, quasi molestias sint vel non recusandae. Vel explicabo nam itaque qui!
                     </p>
                 </div>
                 <div class="footer-Section links">
                     <ul>
-                        <a href="#">
+                        <a href="./index.html">
                             <li>Home</li>
                         </a>
                         <a href="#">
                             <li>About Us</li>
                         </a>
-                        <a href="#">
+                        <a href="./bike.html">
                             <li>Bikes</li>
                         </a>
-                        <a href="#">
+                        <a href="./contact-us/index.php">
                             <li>Contact Us</li>
                         </a>
                     </ul>
@@ -320,9 +320,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     <script src="./js/main.js"></script>
 </body>
 

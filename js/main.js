@@ -35,43 +35,63 @@
         for (var i = 0; i < thumbnails.length; i++) {
             thumbnails[0].addEventListener('mouseover', function() {
                 if (activeimage.length > 0) {
-                    // activeimage[0].classList.remove('active');
+                    activeimage[0].classList.remove('active');
                     slider.style.transform = 'translateX(0)';
                     Bike.style.transform = 'translateX(0)';
                     active.style.top = '0px';
                 }
                 this.classList.add('active')
-                document.getElementById('bike').src = this.src
+                    // document.getElementById('bike').src = this.src
             })
             thumbnails[1].addEventListener('mouseover', function() {
-                if (activeimage.length > 0) {
-                    // activeimage[1].classList.remove('active');
+                if (activeimage.length > 1) {
+                    activeimage[0].classList.remove('active');
                     slider.style.transform = 'translateX(-25%)';
                     Bike.style.transform = 'translateX(-25%)';
                     active.style.top = '80px';
                 }
                 this.classList.add('active')
-                document.getElementById('bike').src = this.src
+                    // document.getElementById('bike').src = this.src
             })
-        }
-        // for green and yellow
-        for (var i = 2; i < thumbnails.length; i++) {
             thumbnails[2].addEventListener('mouseover', function() {
-                if (activeimage.length > 2) {
+                if (activeimage.length > 1) {
+                    activeimage[0].classList.remove('active');
                     slider.style.transform = 'translateX(-50%)';
                     Bike.style.transform = 'translateX(-50%)';
                     active.style.top = '140px';
                 }
                 this.classList.add('active')
-                document.getElementById('bike').src = this.src
+                    // document.getElementById('bike').src = this.src
             })
             thumbnails[3].addEventListener('mouseover', function() {
-                if (activeimage.length > 3) {
+                if (activeimage.length > 1) {
+                    activeimage[0].classList.remove('active');
                     slider.style.transform = 'translateX(-75%)';
                     Bike.style.transform = 'translateX(-75%)';
                     active.style.top = '200px';
                 }
                 this.classList.add('active')
-                document.getElementById('bike').src = this.src
+                    // document.getElementById('bike').src = this.src
             })
         }
+        // for green and yellow
+        // for (var i = 2; i < thumbnails.length; i++) {
+        //     thumbnails[2].addEventListener('mouseover', function() {
+        //         if (activeimage.length > 2) {
+        //             slider.style.transform = 'translateX(-50%)';
+        //             Bike.style.transform = 'translateX(-50%)';
+        //             active.style.top = '140px';
+        //         }
+        //         // this.classList.addClass('active')
+        //         // document.getElementById('bike').src = this.src
+        //     })
+        //     thumbnails[3].addEventListener('mouseover', function() {
+        //         if (activeimage.length > 3) {
+        //             slider.style.transform = 'translateX(-75%)';
+        //             Bike.style.transform = 'translateX(-75%)';
+        //             active.style.top = '200px';
+        //         }
+        //         // this.classList.addClass('active')
+        //         // document.getElementById('bike').src = this.src
+        //     })
+        // }

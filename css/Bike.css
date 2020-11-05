@@ -18,42 +18,97 @@
     position: relative;
 }
 
-.nav-color {
-    color: white !important;
+nav {
+    position: relative;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: var(--montserrat);
+    height: 8vh;
+    padding: 0 5%;
 }
 
-.navbar .site-title {
-    font-family: var(--roboto);
-    font-weight: 700;
-    color: white !important;
+
+/* LOgo Bike rental */
+
+nav .logo {
+    float: left;
+    width: 40%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    font-family: var(--montserrat);
+    font-weight: 900;
+    font-size: 25px;
+    color: white;
+    margin-top: 15px;
+    letter-spacing: 1.5px;
 }
 
-.nav-item:last-child {
-    padding-right: 6em;
+
+/* nav */
+
+nav .links {
+    display: flex;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    width: 40%;
+    height: auto;
+    /* justify-content: space-around; */
+    align-items: center;
 }
 
-.nav-link:hover {
-    color: #ff00c8 !important;
+nav .links li {
+    list-style: none;
 }
 
-.navbar-brand {
-    padding-left: 6rem;
-}
-
-.nav-item>.btn {
-    padding: 2px 20px;
-    margin: 6px 10px;
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
     color: #fff;
     text-decoration: none;
-    /* text-transform: uppercase; */
-    letter-spacing: .5px;
+}
+
+nav .links a:hover {
+    color: #ff00c8;
+}
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.book {
+    background: linear-gradient(90deg, #ff00c8, #ff00c8);
+    text-decoration: none;
+    letter-spacing: 2px;
     border-radius: 5px;
     font-family: var(--montserrat);
     font-weight: 600;
-    background: linear-gradient(90deg, #ff00c8, #ff00c8);
+    padding: 5px 15px!important;
 }
 
-.nav-item>.btn:hover {
+.book:hover {
     background: #fff;
     color: #ff00c8;
 }
@@ -158,7 +213,8 @@ span {
 
 /* Section about bike parts or discription of bike parts */
 
-.section-2 {
+.section-2,
+.section3 {
     padding: 5em;
     padding-left: 7em;
 }
@@ -167,15 +223,24 @@ span {
     padding-top: 3em;
 }
 
-.section-2 h1 {
-    font-family: var(--montserrat);
+.section-2,
+.section3,
+h1 {
+    font-family: var(--roboto);
     font-weight: 700;
+    text-align: center;
 }
 
-.section-2 p {
+.section-2,
+.section3,
+p {
     text-align: justify;
     font-family: var(--montserrat);
     font-weight: 400;
+}
+
+main img {
+    border-radius: 10px;
 }
 
 
@@ -255,4 +320,1225 @@ span {
     /* font-size: 20px; */
     margin-left: 39em;
     transition: all .3s;
+}
+
+
+/* responsive */
+
+@media only screen and (min-width:2560px) {
+    .navbar .site-title {
+        font-size: 5em;
+    }
+    header .nav-item:last-child {
+        padding-right: 2em;
+    }
+    .nav-item {
+        font-size: 3em;
+    }
+    .nav-item>.btn {
+        padding: 10px 30px;
+        font-size: 30px;
+    }
+    .nav-item {
+        padding: 15px;
+    }
+    .info-container {
+        width: 900px;
+        height: 700px;
+    }
+    .content {
+        padding: 5em;
+        width: 900px;
+        height: 100px;
+        margin-top: 20em;
+    }
+    .content h1 {
+        width: 700px;
+        height: 100px;
+        font-size: 100px;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .feature p {
+        width: 800px;
+        height: 0;
+        font-size: 50px;
+    }
+    span {
+        margin: 1em;
+    }
+    .content a {
+        padding: 15px 15px;
+        font-size: 40px;
+        background: linear-gradient( #ff00c8, #ff00c8);
+        margin-left: 5em;
+    }
+    .content a:hover {
+        box-shadow: rgb(248, 0, 227);
+    }
+    #featured {
+        width: 1000px;
+        height: 1200px;
+    }
+    .thumbnail-imgs {
+        border: 2px solid black;
+        margin-left: 8em;
+        margin-top: 2em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 15px;
+    }
+    main h1 {
+        font-size: 70px;
+    }
+    main p {
+        font-size: 40px;
+    }
+    main img {
+        width: 800px;
+        height: 700px;
+    }
+    .section3 img {
+        margin-left: 6em!important;
+    }
+    .footer-bottom p {
+        font-size: 25px;
+    }
+    .footer .footer-content h1 {
+        font-size: 35px;
+        opacity: 0.5;
+    }
+    .footer .footer-content p {
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: 7em;
+    }
+    .footer .footer-content .links ul a li {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .navbar .site-title {
+        font-size: 3em;
+    }
+    .nav-item {
+        font-size: 2em;
+    }
+    main h1 {
+        font-size: 70px;
+    }
+    main p {
+        font-size: 30px;
+    }
+    main img {
+        width: 600px;
+        height: 500px;
+    }
+    .footer-bottom p {
+        font-size: 25px;
+    }
+    .footer .footer-content h1 {
+        font-size: 35px;
+        opacity: 0.5;
+    }
+    .footer .footer-content p {
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: 7em;
+    }
+    .footer .footer-content .links ul a li {
+        font-size: 20px;
+        margin-left: 35em;
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .navbar .site-title {
+        font-size: 3em;
+    }
+    .nav-item {
+        font-size: 1.5em;
+    }
+    .content {
+        padding: 0em;
+        width: 500px;
+        height: 50px;
+        margin-top: 15em;
+        margin-left: 6em;
+    }
+    .content h1 {
+        width: 700px;
+        height: 100px;
+        font-size: 50px;
+        margin-left: -2em;
+    }
+    .feature p {
+        width: 450px;
+        height: 0;
+        font-size: 30px;
+    }
+    span {
+        margin: 1em;
+    }
+    .content a {
+        font-size: 25px;
+        margin-left: 3em;
+    }
+    #featured {
+        width: 700px;
+        height: 800px;
+    }
+    .thumbnail-imgs {
+        border: 2px solid black;
+        margin-left: 8em;
+        margin-top: -7em !important;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 15px;
+    }
+    main h1 {
+        font-size: 40px;
+    }
+    main p {
+        font-size: 20px;
+    }
+    main img {
+        width: 400px;
+        height: 400px;
+    }
+    .section3 img {
+        margin-left: 3em!important;
+    }
+    .footer-bottom p {
+        font-size: 15px;
+    }
+    .footer .footer-content h1 {
+        font-size: 25px;
+        opacity: 0.5;
+    }
+    .footer .footer-content p {
+        font-size: 15px;
+        line-height: 35px;
+        margin-left: 8em;
+    }
+    .footer .footer-content .links ul a li {
+        font-size: 15px;
+        margin-left: 35em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 30em;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    nav .links {
+        width: 50%;
+    }
+    #featured {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+        cursor: pointer;
+        margin-top: 4em !important;
+        margin-left: 5em;
+        /* border: 2px solid black; */
+    }
+    .thumbnail-imgs {
+        border: 2px solid black;
+        margin-left: 8em;
+        margin-top: 5em !important;
+    }
+    .thumbnail {
+        max-width: 600px;
+        max-height: 600px;
+        margin-top: 5em !important;
+        margin-left: 5em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 15px;
+    }
+    .thumbnails:hover {
+        opacity: 1;
+    }
+    .active {
+        opacity: 1;
+    }
+    .content {
+        padding: 0em !important;
+        padding-top: 0em!important;
+        width: 500px;
+        margin-left: 0rem;
+    }
+    .content h1 {
+        width: 500px;
+        font-size: 55px;
+        margin-left: 5px;
+    }
+    .feature {
+        margin-top: -2em!important;
+    }
+    .feature p {
+        width: 500px;
+        font-size: 20px;
+        margin-top: -3em;
+        margin-left: 0em;
+    }
+    span {
+        margin: 1em;
+    }
+    .content a {
+        margin-top: 3em !important;
+        display: block;
+        padding: 5px 5px;
+        color: white;
+        font-size: 20px;
+    }
+    .content a:hover {
+        box-shadow: 0 2px 10px rgb(248, 0, 227);
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    main p {
+        font-size: 15px;
+    }
+    main img {
+        width: 400px;
+        height: 300px;
+    }
+    /* footer */
+    .footer {
+        background: linear-gradient( 320deg, rgba(46, 51, 147, 1) 35%, rgba(41, 170, 225, 1) 100%);
+        color: white;
+        /* height: 200px; */
+        /* position: relative; */
+    }
+    .footer-bottom {
+        color: white;
+        /* height: 5px; */
+        width: 100%;
+        box-shadow: 0px 0px 10px 0px #666;
+        padding: 1px;
+    }
+    .footer-bottom p {
+        opacity: 0.5;
+        margin-top: 15px;
+    }
+    /* Footer content */
+    .footer .footer-content {
+        /* height: 350px; */
+        display: flex;
+    }
+    .footer .footer-content .footer-Section {
+        flex: 1;
+        padding: 25px;
+        /* border: 1px solid wheat; */
+    }
+    .footer .footer-content h1 {
+        color: white;
+        font-size: 15px;
+        margin-left: 5em;
+        opacity: .8;
+        font-family: var(--roboto);
+        font-weight: 700;
+    }
+    .footer .footer-content p {
+        text-align: justify;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 6em;
+        opacity: .8;
+    }
+    /* footer links */
+    .footer .footer-content .links ul a li {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        margin-left: 40em;
+        opacity: .5;
+        transition: all .3s;
+    }
+    .footer .footer-content .links {
+        margin-bottom: 10px;
+    }
+    .footer .footer-content .links ul a li:hover {
+        opacity: 1;
+        /* font-size: 20px; */
+        margin-left: 39em;
+        transition: all .3s;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    nav .links {
+        width: 60%;
+    }
+    .content {
+        padding: 0em;
+        width: 400px;
+        height: 50px;
+        margin-top: 9em;
+        margin-left: 4em;
+    }
+    .content h1 {
+        width: 500px;
+        height: 100px;
+        font-size: 50px;
+        margin-left: -1.8em;
+    }
+    .feature p {
+        width: 400px;
+        height: 0;
+        font-size: 20px;
+        margin-left: -2.5em;
+    }
+    span {
+        margin: 1em;
+    }
+    .content a {
+        font-size: 25px;
+        margin-left: 0em;
+    }
+    #featured {
+        margin-top: -4em !important;
+        width: 500px;
+        height: 600px;
+    }
+    .thumbnail-imgs {
+        border: 2px solid black;
+        margin-left: 8em;
+        margin-top: -5em !important;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 15px;
+    }
+    main h1 {
+        font-size: 20px;
+    }
+    main p {
+        font-size: 13px;
+    }
+    main img {
+        width: 300px;
+        height: 300px;
+    }
+    .section3 img {
+        margin-left: 3em!important;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-Section {
+        padding: 0px;
+        padding-top: 2em;
+    }
+    .footer .footer-content .links {
+        width: 50%;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 35em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 34em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    nav .logo {
+        float: left;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    nav .links a {
+        font-size: 20px;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked~.links {
+        bottom: 50%;
+    }
+    .content {
+        padding: 0em;
+        width: 300px;
+        height: 50px;
+        margin-top: 9em;
+        margin-left: 0em;
+    }
+    .content h1 {
+        width: 500px;
+        height: 100px;
+        font-size: 40px;
+        margin-left: -3em;
+    }
+    .feature p {
+        width: 400px;
+        height: 0;
+        font-size: 25px;
+        margin-left: -3em;
+    }
+    span {
+        margin: 1em;
+    }
+    .content a {
+        font-size: 20px;
+        margin-left: 0em;
+    }
+    #featured {
+        margin-top: 5em !important;
+        margin-left: 1em;
+        width: 300px;
+        height: 300px;
+    }
+    .thumbnail-imgs {
+        margin-top: 0em !important;
+    }
+    .thumbnails {
+        width: 40px;
+        height: 40px;
+    }
+    main h1 {
+        font-size: 20px;
+    }
+    main p {
+        font-size: 10px;
+    }
+    main img {
+        width: 200px;
+        height: 200px;
+    }
+    .section-2 img {
+        margin-left: -1em!important;
+        margin-top: 3em;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 20em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 18em;
+    }
+}
+
+@media only screen and (max-width:565px) {
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        margin: .5em;
+    }
+    .navbar-toggler {
+        margin-left: 7em;
+    }
+    .navbar .site-title {
+        font-size: 1.5em!important;
+    }
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+    .nav-item {
+        font-size: 1em;
+    }
+    .content {
+        padding: 0em;
+        width: 300px;
+        height: 50px;
+        margin-top: 0em;
+        margin-left: 5em;
+    }
+    .content h1 {
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        margin-left: 0em;
+    }
+    .feature p {
+        width: 400px;
+        height: 0em;
+        height: 0;
+        font-size: 25px;
+        margin-left: -2em;
+        margin-bottom: 1em;
+    }
+    span {
+        margin: 10px;
+    }
+    .content a {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 0em;
+        left: 35%!important;
+        top: 115%;
+    }
+    #featured {
+        margin-top: 2em !important;
+        margin-left: 1em;
+        width: 350px;
+        height: 350px;
+    }
+    .thumbnail-imgs {
+        margin-left: 2em;
+        margin-top: 10em!important;
+    }
+    .thumbnail {
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: 5em;
+        margin-left: 5em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 10px;
+    }
+    .row {
+        display: block!important;
+        flex-wrap: nowrap!important;
+    }
+    .section-2 {
+        padding: 2em;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 15px;
+    }
+    main img {
+        width: 250px;
+        height: 250px;
+    }
+    .section-2 img {
+        margin-left: 1em!important;
+        margin-top: 3em;
+    }
+    .section3 {
+        width: auto !important;
+        margin: 0;
+        padding-right: 2em;
+        padding-left: 1em;
+    }
+    .section3 p {
+        width: auto;
+    }
+    .section3 img {
+        margin-bottom: 1.5em;
+        margin-right: 0em;
+        padding: 0em;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-Section {
+        padding: 0px;
+        padding-top: 2em;
+        margin-left: -4em;
+    }
+    .footer .footer-content .links {
+        width: 50%;
+    }
+    .About p {
+        margin-left: 2em;
+        font-size: 5px;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 15em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 14em;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        margin: .5em;
+    }
+    .navbar-toggler {
+        margin-left: 7em;
+    }
+    .navbar .site-title {
+        font-size: 1.5em!important;
+    }
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+    .nav-item {
+        font-size: 1em;
+    }
+    .content {
+        padding: 0em;
+        width: 300px;
+        height: 50px;
+        margin-top: 0em;
+        margin-left: 5em;
+    }
+    .content h1 {
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        margin-left: 0em;
+    }
+    .feature p {
+        width: 400px;
+        height: 0em;
+        height: 0;
+        font-size: 25px;
+        margin-left: -2em;
+        margin-bottom: 1em;
+    }
+    span {
+        margin: 10px;
+    }
+    .content a {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 0em;
+        left: 35%!important;
+        top: 115%;
+    }
+    #featured {
+        margin-top: 2em !important;
+        margin-left: 1em;
+        width: 350px;
+        height: 350px;
+    }
+    .thumbnail-imgs {
+        margin-left: 2em;
+        margin-top: 10em!important;
+    }
+    .thumbnail {
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: 5em;
+        margin-left: 5em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 10px;
+    }
+    .row {
+        display: block!important;
+        flex-wrap: nowrap!important;
+    }
+    .section-2 {
+        padding: 2em;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main p {
+        font-size: 15px;
+    }
+    main img {
+        width: 250px;
+        height: 250px;
+    }
+    .section-2 img {
+        margin-left: 1em!important;
+        margin-top: 3em;
+    }
+    .section3 {
+        width: auto !important;
+        margin: 0;
+        padding-right: 2em;
+        padding-left: 1em;
+    }
+    .section3 p {
+        width: auto;
+    }
+    .section3 img {
+        margin-bottom: 1.5em;
+        margin-right: 0em;
+        padding: 0em;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-Section {
+        padding: 0px;
+        padding-top: 2em;
+        margin-left: -4em;
+    }
+    .footer .footer-content .links {
+        width: 50%;
+    }
+    .About p {
+        margin-left: 2em;
+        font-size: 5px;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 15em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 14em;
+    }
+}
+
+@media only screen and (max-width:393px) {
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        margin: .5em;
+    }
+    .navbar-toggler {
+        margin-left: 7em;
+    }
+    .navbar .site-title {
+        font-size: 1em!important;
+    }
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+    .nav-item {
+        font-size: 1em;
+    }
+    .content {
+        padding: 0em;
+        width: 300px;
+        height: 50px;
+        margin-top: 0em;
+        margin-left: 2em;
+    }
+    .content h1 {
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        margin-left: 5px;
+    }
+    .feature p {
+        width: 300px;
+        height: 0em;
+        height: 0;
+        font-size: 20px;
+        margin-left: 0em;
+        margin-bottom: 1em;
+    }
+    span {
+        margin: 5px;
+    }
+    .content a {
+        position: absolute;
+        font-size: 15px;
+        margin-left: 0em;
+        left: 30%!important;
+        top: 155%;
+    }
+    #featured {
+        margin-top: 2em !important;
+        margin-left: 1em;
+        width: 300px;
+        height: 300px;
+    }
+    .thumbnail-imgs {
+        margin-left: 2em;
+        margin-top: 10em!important;
+    }
+    .thumbnail {
+        max-width: 600px;
+        max-height: 600px;
+        margin-top: 5em;
+        margin-left: 5em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 10px;
+    }
+    .row {
+        display: block!important;
+        flex-wrap: nowrap!important;
+    }
+    .contaner-fluid {
+        padding: 0em !important;
+        margin: 0em !important;
+    }
+    .section-2 {
+        padding: 1em;
+    }
+    .section3 {
+        width: auto !important;
+        margin: 0em;
+        padding: 0em;
+    }
+    .section3 p {
+        padding: 0!important;
+        margin: 0!important;
+    }
+    main h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    main p {
+        font-size: 15px;
+    }
+    main img {
+        width: 300px;
+        height: 300px;
+    }
+    .section-2 img {
+        margin-left: 1em!important;
+        margin-top: 3em;
+    }
+    .section3 {
+        margin: 0;
+        padding: 0;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .section3 img {
+        margin-bottom: 1.5em;
+        margin-left: 1em !important;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-Section {
+        padding: 0px;
+        padding-top: 2em;
+        margin-left: -4em;
+    }
+    .footer .footer-content .links {
+        width: 50%;
+    }
+    .About p {
+        margin-left: 2em;
+        font-size: 5px;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 15em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 14em;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        margin: .5em;
+    }
+    .navbar-toggler {
+        margin-left: 7em;
+    }
+    .navbar .site-title {
+        font-size: 1em!important;
+    }
+    .navbar-brand {
+        padding-left: 1rem;
+    }
+    .nav-item {
+        font-size: 1em;
+    }
+    .content {
+        padding: 0em;
+        width: 300px;
+        height: 50px;
+        margin-top: 0em;
+        margin-left: 2em;
+    }
+    .content h1 {
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        margin-left: 5px;
+    }
+    .feature p {
+        width: 300px;
+        height: 0em;
+        height: 0;
+        font-size: 20px;
+        margin-left: 0em;
+        margin-bottom: 1em;
+    }
+    span {
+        margin: 5px;
+    }
+    .content a {
+        position: absolute;
+        font-size: 15px;
+        margin-left: 0em;
+        left: 30%!important;
+        top: 155%;
+    }
+    #featured {
+        margin-top: 2em !important;
+        margin-left: 1em;
+        width: 300px;
+        height: 300px;
+    }
+    .thumbnail-imgs {
+        margin-left: 2em;
+        margin-top: 10em!important;
+    }
+    .thumbnail {
+        max-width: 600px;
+        max-height: 600px;
+        margin-top: 5em;
+        margin-left: 5em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 10px;
+    }
+    .row {
+        display: block!important;
+        flex-wrap: nowrap!important;
+    }
+    .contaner-fluid {
+        padding: 0em !important;
+        margin: 0em !important;
+    }
+    .section-2 {
+        padding: 1em;
+    }
+    .section3 {
+        width: auto !important;
+        margin: 0em;
+        padding: 0em;
+    }
+    .section3 p {
+        padding: 0!important;
+        margin: 0!important;
+    }
+    main h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    main p {
+        font-size: 15px;
+    }
+    main img {
+        width: 300px;
+        height: 300px;
+    }
+    .section-2 img {
+        margin-left: 1em!important;
+        margin-top: 3em;
+    }
+    .section3 {
+        margin: 0;
+        padding: 0;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .section3 img {
+        margin-bottom: 1.5em;
+        margin-left: 1em !important;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-Section {
+        padding: 0px;
+        padding-top: 2em;
+        margin-left: -4em;
+    }
+    .footer .footer-content .links {
+        width: 50%;
+    }
+    .About p {
+        margin-left: 2em;
+        font-size: 5px;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 15em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 14em;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+        margin: .5em;
+    }
+    .navbar-toggler {
+        margin-left: 5em !important;
+    }
+    .navbar .site-title {
+        font-size: 15px !important;
+    }
+    .navbar-brand {
+        padding-left: 0rem !important;
+    }
+    .nav-item {
+        font-size: 1em;
+    }
+    .content {
+        padding: 0em;
+        width: auto !important;
+        height: 50px;
+        margin-top: 0em;
+        margin-left: 0em;
+    }
+    .content h1 {
+        width: auto !important;
+        height: 100px;
+        font-size: 40px;
+        margin-left: 5px;
+    }
+    .feature p {
+        width: auto;
+        height: 0em;
+        height: 0;
+        font-size: 20px;
+        margin-left: 0em;
+        margin-bottom: 1em;
+    }
+    span {
+        margin: 5px;
+    }
+    .content a {
+        position: absolute;
+        font-size: 15px;
+        margin-left: 0em;
+        left: 25%!important;
+        top: 155%;
+    }
+    #featured {
+        margin-top: 1em !important;
+        margin-left: 0em;
+        width: 300px;
+        height: 300px;
+    }
+    .thumbnail-imgs {
+        margin-left: 1em;
+        margin-top: 10em!important;
+    }
+    .thumbnail {
+        max-width: 600px;
+        max-height: 600px;
+        margin-top: 5em;
+        margin-left: 5em;
+    }
+    .thumbnails {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0.7;
+        margin: 7px;
+    }
+    .row {
+        display: block!important;
+        flex-wrap: nowrap!important;
+    }
+    .contaner-fluid {
+        padding: 0em !important;
+        margin: 0em !important;
+    }
+    .section-2 {
+        padding: 1em;
+    }
+    .section3 {
+        width: auto !important;
+        margin: 0em;
+        padding: 0em;
+    }
+    .section3 p {
+        padding: 0!important;
+        margin: 0!important;
+    }
+    main h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    main p {
+        font-size: 15px;
+    }
+    main img {
+        width: 250px;
+        height: 250px;
+    }
+    .section-2 img {
+        margin-left: 1em!important;
+        margin-top: 3em;
+    }
+    .section3 {
+        margin: 0;
+        padding: 0;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .section3 img {
+        margin-bottom: 1.5em;
+        margin-left: 1em !important;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-Section {
+        padding: 0px;
+        padding-top: 2em;
+        margin-left: -4em;
+    }
+    .footer .footer-content .links {
+        width: 50%;
+    }
+    .About p {
+        margin-left: 2em;
+        font-size: 5px;
+    }
+    .footer .footer-content .links ul a li {
+        margin-left: 10em;
+    }
+    .footer .footer-content .links ul a li:hover {
+        margin-left: 9em;
+    }
 }
